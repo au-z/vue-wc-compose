@@ -1,11 +1,13 @@
 {
 	"name": "vue-wc-compose",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Compose hosted vue components and web components",
 	"main": "index.js",
 	"scripts": {
 		"build": "webpack --mode=production",
 		"dev": "webpack --mode=development --watch",
+		"demo": "http-server . -p 9999",
+		"demo:build": "node ./demo/components/build.js",
 		"prepublishOnly": "concurrently \"npm run build\" \"webpack --mode=development\""
 	},
 	"keywords": [
@@ -35,12 +37,18 @@
 		"@babel/preset-env": "^7.8.6",
 		"@babel/preset-typescript": "^7.8.3",
 		"babel-loader": "^8.0.6",
+		"css-loader": "^3.4.2",
+		"http-server": "^0.12.1",
+		"style-loader": "^1.1.3",
 		"concurrently": "^5.1.0",
 		"core-js": "^3.6.4",
 		"regenerator-runtime": "0.13.3",
 		"typescript": "^3.8.3",
 		"webpack": "^4.42.0",
-		"webpack-cli": "^3.3.11"
+		"webpack-cli": "^3.3.11",
+		"vue-loader": "^15.9.0",
+		"vue": "^2.6.11",
+		"vue-template-compiler": "^2.6.11"
 	},
 	"peerDependencies": {
 		"webpack": "^4.27.0"

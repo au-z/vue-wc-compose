@@ -17,6 +17,7 @@ function build(webpackConfig, components) {
 		}
 		process.stdout.write(stats.toString({
 			colors: true,
+			errors: true,
 			modules: false,
 			children: false,
 			chunks: false,

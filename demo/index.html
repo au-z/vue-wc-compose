@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024, initial-scale=1.0">
+	<title>Compatibility Test</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="/dist/vue-wc-compose.js"></script>
+</head>
+<body>
+	Check the console for browser compatibility errors.
+	<div id="app"></div>
+
+	<script>
+		Vue.use(window['vue-wc-compose'])
+
+		new Vue({
+			el: '#app',
+			compose: {
+				'wc-test': {type: 'wc', src: '/demo/components/dist/wc-test.js'},
+			},
+			template: '<div><br>' +
+				'<h3> wc-test: </h3><wc-test/>' +
+			'</div>',
+		});
+	</script>
+</body>
+</html>

@@ -112,3 +112,17 @@ Once the component has been referenced, we can use it in our component templates
 		...
 	</div>
 </template>
+```
+
+## Troubleshooting
+Testing web components in an isolated scope can be difficult. The demo application allows you to easily test web components from this repository and others.
+
+```bash
+# build the demo components
+npm run demo:build
+
+# run the demo application
+npm run demo
+```
+
+Edit the index.html file to request and render the components of your choosing.
