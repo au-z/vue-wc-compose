@@ -1,6 +1,14 @@
 # vue-wc-compose
 > A tool for building and distributing vue components as vue and web components for easy sharing between teams.
 
+## Dependencies
+1. Document Register Element Polyfill
+> For IE 9+ compatibility only
+```html
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.4.1/document-register-element.js"></script>
+```
+2. Webpack >= 4.x - only for building web components
+
 ## Getting Started
 All components start as regular Vue components.
 
