@@ -1,0 +1,53 @@
+{
+	"name": "vue-wc-compose",
+	"version": "1.2.0",
+	"description": "Compose hosted vue components and web components",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --mode=production",
+		"dev": "webpack --mode=development --watch",
+		"prepublishOnly": "concurrently \"npm run build\" \"webpack --mode=development\""
+	},
+	"keywords": [
+		"vue",
+		"compose",
+		"ui",
+		"web components"
+	],
+	"author": "Austin Martin (auz.martin@gmail.com)",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/auzmartist/vue-wc-compose.git"
+	},
+	"dependencies": {
+		"vue-custom-element": "^3.2.6",
+		"webpack-merge": "^4.1.4"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.8.6",
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+		"@babel/preset-env": "^7.8.6",
+		"@babel/preset-typescript": "^7.8.3",
+		"babel-loader": "^8.0.6",
+		"concurrently": "^5.1.0",
+		"core-js": "^3.6.4",
+		"regenerator-runtime": "0.13.3",
+		"typescript": "^3.8.3",
+		"webpack": "^4.42.0",
+		"webpack-cli": "^3.3.11"
+	},
+	"peerDependencies": {
+		"webpack": "^4.27.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"ie 11"
+	]
+}
