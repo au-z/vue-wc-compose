@@ -14,5 +14,5 @@ function webComponentWrapper(Vue, component) {
 }
 
 export default {
-	webComponentWrapper,
+	webComponentWrapper: webComponentWrapper,
 };

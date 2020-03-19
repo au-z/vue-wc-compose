@@ -133,4 +133,11 @@ npm run demo:build
 npm run demo
 ```
 
+The demo script uses [http-server](https://www.npmjs.com/package/http-server) under the hood and all http-server options are available to you through the npm call.
+For example, to proxy all unresolved requests to another server:
+
+```
+npm run demo -- -P http://my-other-server.biz/web-components/
+```
+
 Edit the index.html file to request and render the components of your choosing.

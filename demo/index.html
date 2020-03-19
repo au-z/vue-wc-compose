@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1024, initial-scale=1.0">
 	<title>Compatibility Test</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.4.1/document-register-element.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="/dist/vue-wc-compose.js"></script>
@@ -13,7 +14,7 @@
 	<div id="app"></div>
 
 	<script>
-		Vue.use(window['vue-wc-compose'])
+		Vue.use(window['vue-wc-compose']);
 
 		new Vue({
 			el: '#app',
